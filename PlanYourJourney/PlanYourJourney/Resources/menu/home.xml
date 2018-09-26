@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/ic_action_cached"
+    local:showAsAction="always"
+    android:icon="@drawable/ic_action_cached"
+    android:title="Update" />
+  <item
+    android:id="@+id/ic_action_add_circle"
+    local:showAsAction="always"
+    android:icon="@drawable/ic_action_add_circle"
+    android:title="Add" />
+</menu>

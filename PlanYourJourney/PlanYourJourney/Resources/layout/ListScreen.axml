@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base">
+    <EditText
+        android:id="@+id/txtDateEdited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:textColor="@color/secondary_text"
+        android:hint="DD-MM-YYYY" />
+    <EditText
+        android:id="@+id/authorFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:textColor="@color/secondary_text"
+        android:hint="By author" />
+    <Button
+        android:id="@+id/clear_filters_btn"
+        android:text="Clear filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#FFDAFF00"
+        android:dividerHeight="3dp"
+        android:divider="#ffffffff" />
+</LinearLayout>

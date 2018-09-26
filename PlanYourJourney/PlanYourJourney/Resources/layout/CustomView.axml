@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@color/icons"
+    android:layout_margin="10dp"
+    android:elevation="2dp"
+    android:padding="1dp">
+    <LinearLayout
+        android:id="@+id/Text"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/Image">
+        <ImageView
+            android:id="@id/Image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/splash_screen"
+            android:layout_alignParentLeft="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/primary_text"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="14dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/secondary_text" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

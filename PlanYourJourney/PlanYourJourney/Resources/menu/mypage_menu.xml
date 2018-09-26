@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item
+        android:id="@+id/ic_action_cached"
+        local:showAsAction="always"
+        android:icon="@drawable/ic_action_cached"
+        android:title="Update" />
+  <item android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_action_delete"
+        local:showAsAction="always"
+        android:title="Delete" />
+  <item android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_action_content_create"
+        local:showAsAction="always"
+        android:title="Edit" />
+</menu>

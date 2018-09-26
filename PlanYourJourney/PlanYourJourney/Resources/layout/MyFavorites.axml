@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base">
+    <TextView
+        android:id="@+id/text_fav"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="18dip"
+        android:text="@string/your_favorites"
+        android:textColor="@color/secondary_text"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <ListView
+        android:elevation="2dp"
+        android:layout_margin="3dp"
+        android:id="@+id/List_of_Favorites"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#FFDAFF00"
+        android:dividerHeight="3dp"
+        android:divider="@color/base" />
+</LinearLayout>

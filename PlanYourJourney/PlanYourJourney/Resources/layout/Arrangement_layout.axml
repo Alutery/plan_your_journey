@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fafafafa"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:id="@+id/head_content"
+        android:elevation="2dp"
+        android:layout_below="@id/toolbar"
+        android:weightSum="4">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/head_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/toolbar"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/arrangement_name"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:textSize="20dip"
+                android:textColor="@color/primary_text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:textSize="16dip"
+                android:textColor="@color/secondary_text"
+                android:gravity="center"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/arrangement_picture"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_margin="25dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/no_image_box"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/arrangement_author"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:textSize="15dip"
+        android:text="Автор: "
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/secondary_text"
+        android:gravity="center"
+        android:textStyle="normal" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_content"
+        android:background="@color/icons"
+        android:layout_margin="10dp"
+        android:elevation="2dp">
+        <TextView
+            android:id="@+id/arrangement_name_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dip"
+            android:textColor="@color/primary_text"
+            android:gravity="center"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="normal"
+            android:singleLine="false" />
+        <TextView
+            android:id="@+id/arrangement_place"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="normal"
+            android:singleLine="false" />
+        <TextView
+            android:id="@+id/arrangement_notes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:layout_margin="25dp"
+            android:singleLine="false"
+            android:textColor="@color/secondary_text"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>
